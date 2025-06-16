@@ -19,6 +19,7 @@
 
     --background-primary: #F4F5FB;
     --background-secondary: #FFFFFF;
+    --background-terciary: #d6d6d6;
 
     --color-brand: #CA3884;
     --color-brand-hover: #A52C6B;
@@ -249,18 +250,24 @@ img {
 .shopping-item {
     width: 100%;
     height: auto;
-
     display: flex;
     flex-direction: row;
     align-items: center;
-
-
     padding: 12px 8px;
     gap: 12px;
-
     border: none;
     border-radius: 12px;
     background-color: var(--background-secondary);
+    transition: background-color 0.3s ease;
+}
+
+.shopping-item.checked-item {
+    background-color: var(--background-terciary);
+}
+
+.shopping-item.checked-item .item-name {
+    text-decoration: line-through;
+    color: var(--content-terciary);
 }
 
 .custom-checkbox {
