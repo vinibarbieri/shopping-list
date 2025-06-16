@@ -1,0 +1,132 @@
+<!-- Inicializa o html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Shopping List</title>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="logo.png" alt="Logo" id="logo-image" />
+        <h1 id="logo">listly</h1>
+    </div>
+
+    <main>
+        <div class="title-container">
+            <button onclick="history.back" id="back-button">
+                <i class="bi bi-arrow-left"></i>
+                Back
+            </button>
+            <h2 id="title">Weekly Shopping</h2>
+        </div>
+        
+        <div class="input-container">
+            <input type="text" id="item-input" placeholder="Add an item" />
+            <button id="add-item-button">Add item</button>
+        </div>
+
+        <div class="shopping-list-container">
+            <div class="shopping-list">
+                <ul class="shopping-list-items">
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-1" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+                            
+                        <label for="item-1" class="item-name">Pão de forma</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-2" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+                        
+                        <label for="item-2" class="item-name">Café preto</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-1" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+                            
+                        <label for="item-1" class="item-name">Suco de laranja</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-2" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+
+                        <label for="item-2" class="item-name">Bolacha</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-2" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+                        
+                        <label for="item-2" class="item-name">Café preto</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-1" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+                            
+                        <label for="item-1" class="item-name">Suco de laranja</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                    <li class="shopping-item">
+                        <label class="custom-checkbox">
+                            <input type="checkbox" class="item-checkbox" id="item-2" />
+                            <span class="checkmark"><i class="bi bi-check-lg"></i></span>
+                        </label>
+
+                        <label for="item-2" class="item-name">Bolacha</label>
+                        <button class="delete-button">
+                            <i class="bi bi-trash"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <footer>
+                <i class="bi bi-exclamation-circle-fill" id="exclamation-icon"></i>
+                <p id="alert">The item was removed from the list</p>
+                <button id="alert-button"><i class="bi bi-x" id="alert-button-icon"></i></button>
+            </footer>
+        </div>
+
+
+
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
